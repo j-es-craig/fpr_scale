@@ -12,9 +12,8 @@ This quick project aims to determine if fundus color can be separated into clini
     ![example 2](bin/img_2.png)
 
  2) extract_colors.py
-    - Extracts dominant colors from fundus images, filters out black
+    - Extracts dominant colors from fundus images, removes alpha channels if present, and filters out black
     - Returns file with RGB values (and count) per dominant color, per image
-    - Ensure to remove alpha channel if using PNGs w/ transparent elements
 
     ![example 3](bin/fig_3.png)
 
