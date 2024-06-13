@@ -22,15 +22,14 @@ Data used: [Zhao et al. 2024](https://www.nature.com/articles/s41597-024-03362-5
 
  3) rearrange.py
     - Spreads dominant_colors.csv into single row entries (per image)
+    - [Merge](merge.py) [patient data](results/merged_zip_information.csv) with the [rearranged data](results/post_processed/Normal/rearranged_rgb_values.csv) [if desired](results/post_processed/Normal/merged_data.csv)
 
     ![example 5](bin/fig_5.png)
 
  4) recode.py
-    - Before this step, merge [patient data](results/merged_zip_information.xlsx) with the [rearranged data](results/post_processed/Normal/rearranged_rgb_values.csv)
-    - Recode will encode eye side and gender as 0 and 1
-    - Recode will also sum birth week and day into a single figure
+    - If including patient data this will encode eye side and gender as 0 and 1, and also sum birth week and day into a single figure
  
- The data is now ready for cluster analysis. Specific dimensions can be included or included in analysis. [After labelling](results/clustered_output.xlsx), you can plot. For example:
+ The data is now ready for cluster analysis. Specific dimensions can be included or excluded from analysis. [After labelling](results/clustered_output.xlsx), you can plot. For example:
 
  ![example 4](bin/fig_4.png)
 

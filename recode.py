@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the Excel file
-file_path = 'path_to_your_file/merged_output.xlsx'
+file_path = 'path_to_your_file/merged_output.csv'
 data = pd.read_excel(file_path, sheet_name='Sheet1')
 
 # Recode Eye Side: OD = 0, OS = 1
@@ -17,7 +17,7 @@ data['Gestational age (weeks)'] = data['Gestational age at birth(week)'] + (data
 data = data.drop(columns=['Gestational age at birth(week)', 'Gestational age at birth(day)'])
 
 # Save the modified data to a new Excel file
-output_file_path = 'path_to_save_your_file/modified_output.xlsx'
-data.to_excel(output_file_path, index=False)
+output_file_path = 'path_to_save_your_file/modified_output.csv'
+data.to_csv(output_file_path, index=False)
 
 print(f"Modified file saved to {output_file_path}")
