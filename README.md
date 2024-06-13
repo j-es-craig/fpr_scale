@@ -28,7 +28,7 @@ This quick project aims to determine if fundus color can be separated into clini
     - This script will encode eye side and gender as 0 and 1
  
  5) k-means.py
-    - The data is now ready for cluster analysis. Specific dimensions can be included or excluded from analysis. For example, you can plot:
+    - The data is now ready for cluster analysis. Specific dimensions can be included or excluded from analysis. For example:
 
  ![example 5](bin/Figure_2.png)
  ![example 6](bin/Figure_1.png)
