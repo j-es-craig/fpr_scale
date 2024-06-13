@@ -22,7 +22,7 @@ This quick project aims to determine if fundus color can be separated into clini
     - Spreads dominant_colors.csv into single row entries (per image)
     - [Merge](merge.py) [patient data](results/merged_zip_information.csv) with the [rearranged data](results/post_processed/Normal/rearranged_rgb_values.csv) [if desired](results/post_processed/Normal/merged_data.csv)
 
-    ![example 5](bin/fig_5.png)
+    ![example 4](bin/fig_5.png)
 
  4) recode.py
     - If including non-numerical data, this will need to be recoded before analysis
@@ -30,16 +30,16 @@ This quick project aims to determine if fundus color can be separated into clini
  
  The data is now ready for cluster analysis. Specific dimensions can be included or excluded from analysis. [After labelling](results/clustered_output.xlsx), you can plot. For example:
 
- ![example 4](bin/output.png)
- ![example 5](bin/output_2.png)
-
+ ![example 5](bin/output.png)
+ ![example 6](bin/Figure_3.png)
+ ![example 7](bin/output_2.png)
 
 
 ## Next Steps and Considerations
 - EXIF metadata will allow us to control for inconsitencies among images, and isolate pigmentation
 - Considering demographic data, eye side, age, and weight could be informative in cluster analysis. Inclusion of disease information (pathology, severity, etc.) will increase clinical relevancy (maybe?)
 - Associations between clusters and specific dimensions should be investigated (i.e., color, demographics, etc.)
-- Other means of clustering should be investigated, including bootstrapping methods, unsupervised machine learning methods, or alternate means of thresholding
+- Other means of clustering should be investigated, including bootstrapping methods, other machine learning methods, or alternate means of thresholding
 
 Sorry about the excel files, I will fix scripts to output CSV only later. 
 
