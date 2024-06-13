@@ -30,7 +30,10 @@ This quick project aims to determine if fundus color can be separated into clini
  
  The data is now ready for cluster analysis. Specific dimensions can be included or excluded from analysis. [After labelling](results/clustered_output.xlsx), you can plot. For example:
 
- ![example 4](bin/fig_4.png)
+ ![example 4](bin/output.png)
+ ![example 5](bin/output_2.png)
+
+
 
 ## Next Steps and Considerations
 - EXIF metadata will allow us to control for inconsitencies among images, and isolate pigmentation
