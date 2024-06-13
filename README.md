@@ -40,6 +40,7 @@ This quick project aims to determine if fundus color can be separated into clini
 - Considering demographic data, eye side, age, and weight could be informative in cluster analysis. Inclusion of disease information (pathology, severity, etc.) will increase clinical relevancy (maybe?)
 - Associations between clusters and specific dimensions should be investigated (i.e., color, demographics, etc.)
 - Other means of clustering should be investigated, including bootstrapping methods, other machine learning methods, or alternate means of thresholding
+- Will try out on [MedMNST](https://zenodo.org/records/10519652) retina dataset
 
 ## Dependencies
  - numpy
