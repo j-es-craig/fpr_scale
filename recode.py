@@ -1,23 +1,19 @@
 import pandas as pd
 
-# Load the Excel file
-file_path = 'path_to_your_file/merged_output.csv'
-data = pd.read_excel(file_path, sheet_name='Sheet1')
+# Load the dataset
+file_path = 'path_to_your_file/merged_data.csv'
+data = pd.read_csv(file_path)
 
-# Recode Eye Side: OD = 0, OS = 1
+# Recode the 'eye' and 'Gender' columns
 data['eye'] = data['eye'].map({'OD': 0, 'OS': 1})
-
-# Recode Gender: Male = 0, Female = 1
 data['Gender'] = data['Gender'].map({'Male': 0, 'Female': 1})
 
-# Create a new column for gestational age in weeks
-data['Gestational age (weeks)'] = data['Gestational age at birth(week)'] + (data['Gestational age at birth(day)'] / 7)
+# Remove the specified columns
+data_cleaned = data.drop(columns=['Unnamed: 0', 'ID'])
 
-# Drop the old week and day columns
-data = data.drop(columns=['Gestational age at birth(week)', 'Gestational age at birth(day)'])
+# Display the first few rows of the cleaned dataset
+print(data_cleaned.head())
 
-# Save the modified data to a new Excel file
-output_file_path = 'path_to_save_your_file/modified_output.csv'
-data.to_csv(output_file_path, index=False)
+# Optionally, save the cleaned dataset to a new CSV file
+data_cleaned.to_csv('path_to_your_file/cleaned_data.csv', index=False)
 
-print(f"Modified file saved to {output_file_path}")
