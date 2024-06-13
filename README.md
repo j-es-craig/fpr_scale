@@ -18,15 +18,24 @@
  3) rearrange.py
     - Spreads dominant_colors.csv into single row entries (per image)
 
+    ![example 5](bin/fig_5.png)
+
  4) recode.py
     - Will encode eye side and gender as 0 and 1
  
  At some point, 'merged_zip_information.xlsx' needs to be joined with the rearranged data
- The data is now ready for cluster analysis
+ The data is now ready for cluster analysis. For example:
 
  ![example 4](bin/fig_4.png)
+
+## Considerations
+- EXIF metadata will allow us to control for inconsitencies among images, and isolate pigmentation
+- Considering demographic data, eye side, age, and weight could be informative in cluster analysis
+- Other means of clustering should be investigated, including bootstrapping methods, unsupervised machine learning methods, or alternate means of thresholding
 
 ## Dependencies
  - numpy
  - opencv
- - 
+ - scikit-learn
+ - matplotlib
+ - seaborn
