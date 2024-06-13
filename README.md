@@ -1,6 +1,10 @@
 # fpr_scale
  Piloting the development of a Fitzpatrick scale analogue for intraocular pigmentation
 
+## Description
+This quick project aims to determine if fundus color can be separated into clinical meaningful groups using clustering analysis
+Data used: [Zhao et al. 2024](https://www.nature.com/articles/s41597-024-03362-5)
+
 ## Instructions
  1) pre_process.py
     - Removes black borders from fundus images and returns a PNG with a transparent background
@@ -31,11 +35,11 @@
 
 ## Next Steps and Considerations
 - EXIF metadata will allow us to control for inconsitencies among images, and isolate pigmentation
-- Considering demographic data, eye side, age, and weight could be informative in cluster analysis
+- Considering demographic data, eye side, age, and weight could be informative in cluster analysis. Inclusion of disease information (pathology, severity, etc.) will increase clinical relevancy (maybe?)
 - Associations between clusters and specific dimensions should be investigated (i.e., color, demographics, etc.)
 - Other means of clustering should be investigated, including bootstrapping methods, unsupervised machine learning methods, or alternate means of thresholding
 
-Sorry about the excel files, these will be fixed later. 
+Sorry about the excel files, I will fix scripts to output CSV only later. 
 
 ## Dependencies
  - numpy
