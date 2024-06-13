@@ -28,11 +28,11 @@ This quick project aims to determine if fundus color can be separated into clini
     - If including non-numerical data, this will need to be recoded before analysis
     - This script will encode eye side and gender as 0 and 1
  
- The data is now ready for cluster analysis. Specific dimensions can be included or excluded from analysis. [After labelling](results/clustered_output.xlsx), you can plot. For example:
+ The data is now ready for cluster analysis. Specific dimensions can be included or excluded from analysis. For example, you can plot:
 
- ![example 5](bin/output.png)
- ![example 6](bin/Figure_3.png)
- ![example 7](bin/output_2.png)
+ ![example 5](bin/Figure_2.png)
+ ![example 6](bin/Figure_1.png)
+ ![example 7](bin/Figure_3.png)
 
 
 ## Next Steps and Considerations
