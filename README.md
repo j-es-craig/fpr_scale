@@ -2,7 +2,7 @@
  Piloting the development of a Fitzpatrick scale analogue for intraocular pigmentation
 
 ## Description
-This quick project aims to determine if fundus color can be separated into clinical meaningful groups using clustering analysis. The data used for this comes from [Zhao et al. (2024).](https://www.nature.com/articles/s41597-024-03362-5)
+This quick project aims to determine if fundus color can be separated into clinical meaningful groups using clustering analysis.
 
 ## Instructions
  1) pre_process.py
