@@ -35,6 +35,8 @@
 - Associations between clusters and specific dimensions should be investigated (i.e., color, demographics, etc.)
 - Other means of clustering should be investigated, including bootstrapping methods, unsupervised machine learning methods, or alternate means of thresholding
 
+Sorry about the excel files, these will be fixed later. 
+
 ## Dependencies
  - numpy
  - opencv
