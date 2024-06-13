@@ -12,7 +12,7 @@ This quick project aims to determine if fundus color can be separated into clini
     ![example 2](bin/img_2.png)
 
  2) extract_colors.py
-    - Extracts dominant colors from fundus images, removes alpha channels if present, and filters out black
+    - Extracts dominant colors from fundus images, removes alpha channel if present, and filters out black
     - Returns file with RGB values (and count) per dominant color, per image
 
     ![example 3](bin/fig_3.png)
@@ -24,7 +24,7 @@ This quick project aims to determine if fundus color can be separated into clini
     ![example 4](bin/fig_5.png)
 
  4) recode.py
-    - If including non-numerical data, this will need to be recoded before analysis
+    - If including non-numerical data, this will need to be [recoded](results/post_processed/Normal/cleaned_data.csv) before analysis
     - This script will encode eye side and gender as 0 and 1
  
  The data is now ready for cluster analysis. Specific dimensions can be included or excluded from analysis. For example, you can plot:
@@ -39,8 +39,6 @@ This quick project aims to determine if fundus color can be separated into clini
 - Considering demographic data, eye side, age, and weight could be informative in cluster analysis. Inclusion of disease information (pathology, severity, etc.) will increase clinical relevancy (maybe?)
 - Associations between clusters and specific dimensions should be investigated (i.e., color, demographics, etc.)
 - Other means of clustering should be investigated, including bootstrapping methods, other machine learning methods, or alternate means of thresholding
-
-Sorry about the excel files, I will fix scripts to output CSV only later. 
 
 ## Dependencies
  - numpy
