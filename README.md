@@ -23,8 +23,8 @@
  4) recode.py
     - Will encode eye side and gender as 0 and 1
  
- At some point, 'merged_zip_information.xlsx' needs to be joined with the rearranged data.
- The data is now ready for cluster analysis. For example:
+ At some point, 'merged_zip_information.xlsx' [needs to be joined with the rearranged data](results/merged_output.xlsx).
+ The data is now ready for cluster analysis. [For example:](clustered_output.xlsx)
 
  ![example 4](bin/fig_4.png)
 
