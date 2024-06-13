@@ -21,16 +21,18 @@
     ![example 5](bin/fig_5.png)
 
  4) recode.py
-    - Will encode eye side and gender as 0 and 1
+    - Before this step, merge [patient data](results/merged_zip_information.xlsx) with the [rearranged data](results/post_processed/Normal/rearranged_rgb_values.csv)
+    - Recode will encode eye side and gender as 0 and 1
+    - Recode will also sum birth week and day into a single figure
  
- At some point, 'merged_zip_information.xlsx' [needs to be joined with the rearranged data](results/merged_output.xlsx).
- The data is now ready for cluster analysis. [For example:](clustered_output.xlsx)
+ The data is now ready for cluster analysis. Specific dimensions can be included or included in analysis. [After labelling](results/clustered_output.xlsx), you can plot. For example:
 
  ![example 4](bin/fig_4.png)
 
 ## Next Steps and Considerations
 - EXIF metadata will allow us to control for inconsitencies among images, and isolate pigmentation
 - Considering demographic data, eye side, age, and weight could be informative in cluster analysis
+- Associations between clusters and specific dimensions should be investigated (i.e., color, demographics, etc.)
 - Other means of clustering should be investigated, including bootstrapping methods, unsupervised machine learning methods, or alternate means of thresholding
 
 ## Dependencies
