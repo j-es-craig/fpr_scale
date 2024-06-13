@@ -5,6 +5,10 @@
 This quick project aims to determine if fundus color can be separated into clinical meaningful groups using clustering analysis.
 
 ## Instructions
+ 1) Edit [init.py](init.py) with filepaths to image data
+ 2) Execute [main.py](main.py)
+
+## Explanation
  1) pre_process.py
     - Removes black borders from fundus images and returns a PNG with a transparent background
 
@@ -17,7 +21,7 @@ This quick project aims to determine if fundus color can be separated into clini
 
     ![example 3](bin/fig_3.png)
 
- 3) rearrange.py
+ 3) rearrange.py and merge.py
     - Spreads dominant_colors.csv into single row entries (per image)
     - [Merge](merge.py) [patient data](results/merged_zip_information.csv) with the [rearranged data](results/post_processed/Normal/rearranged_rgb_values.csv) [if desired](results/post_processed/Normal/merged_data.csv)
 
@@ -26,6 +30,7 @@ This quick project aims to determine if fundus color can be separated into clini
  4) recode.py
     - If including non-numerical data, this will need to be [recoded](results/post_processed/Normal/cleaned_data.csv) before analysis
     - This script will encode eye side and gender as 0 and 1
+      - OD = 0; OS = 1; Male = 0; Female = 1
  
  5) k-means.py
     - The data is now ready for cluster analysis. Specific dimensions can be included or excluded from analysis. For example:
