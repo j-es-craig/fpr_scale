@@ -20,7 +20,7 @@ pca = PCA(n_components=2)
 pca_result = pca.fit_transform(scaled_data)
 
 # Perform K-means clustering with 4 clusters
-optimal_clusters = 3
+optimal_clusters = 4
 kmeans = KMeans(n_clusters=optimal_clusters, random_state=42)
 clusters = kmeans.fit_predict(pca_result)
 
@@ -37,6 +37,4 @@ plt.title('PCA Result with K-means Clustering (3 clusters)')
 legend1 = plt.legend(*scatter.legend_elements(), title="Clusters")
 plt.gca().add_artist(legend1)
 plt.show()
-
-# Plot the PCA result with Hex colors
 
