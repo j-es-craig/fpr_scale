@@ -6,10 +6,10 @@ file_path = init.RESULTS_OUT_DIR + '/dominant_colors.csv'
 df = pd.read_csv(file_path)
 
 # Group by FileName and aggregate the RGB values and Count
-grouped_df = df.groupby('FileName').agg({'R': lambda x: list(x)[:3], 
-                                         'G': lambda x: list(x)[:3], 
-                                         'B': lambda x: list(x)[:3],
-                                         'Count': lambda x: list(x)[:3]})
+grouped_df = df.groupby('FileName').agg({'R': lambda x: list(x)[:4], 
+                                         'G': lambda x: list(x)[:4], 
+                                         'B': lambda x: list(x)[:4],
+                                         'Count': lambda x: list(x)[:4]})
 
 # Split the aggregated lists into separate columns
 flattened_df = pd.DataFrame(grouped_df['R'].tolist(), index=grouped_df.index).add_prefix('R_').join(
