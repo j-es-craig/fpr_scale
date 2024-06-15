@@ -3,9 +3,12 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
+import init
+
+input_file = init.RESULTS_OUT_DIR + 'rescaled.csv'
 
 # Load the dataset
-data = pd.read_csv('fpr_scale/results/post_processed/Normal/cleaned_data_with_hex_colors.csv')
+data = pd.read_csv(input_file)
 
 # Select relevant columns for analysis
 columns_to_exclude = ['eye', 'Gender', 'Gestational age at birth(week)', 'Gestational age at birth(day)', 'Birth weight(g)', 'Hex Color']

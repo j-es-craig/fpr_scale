@@ -2,7 +2,7 @@ import pandas as pd
 import init
 
 # Load the dataset
-file_path = init.RESULTS_OUT_DIR + 'rearranged.csv'
+file_path = init.RESULTS_OUT_DIR + '/rearranged.csv'
 data = pd.read_csv(file_path)
 
 # Extract columns
@@ -29,6 +29,10 @@ for i in range(len(r_columns)):
     data[g_col + '_Scaled'] = data[g_col] * data[count_percent_col]
     data[b_col + '_Scaled'] = data[b_col] * data[count_percent_col]
 
+# Extract only the scaled RGB columns along with the FileName
+scaled_columns = [col for col in data.columns if 'Scaled' in col]
+scaled_data = data[['FileName'] + scaled_columns]
+
 # Save the processed dataset to a new CSV file
-output_file_path = init.RESULTS_OUT_DIR + 'rescaled.csv'
-data.to_csv(output_file_path, index=False)
+output_file_path = init.RESULTS_OUT_DIR + '/rescaled.csv'
+scaled_data.to_csv(output_file_path, index=False)
