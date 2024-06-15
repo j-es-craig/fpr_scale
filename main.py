@@ -1,8 +1,3 @@
-from make_fprs import pre_process, extract_colors, rearrange, merge, recode, rgb_to_hex
+from make_fprs import pre_process, extract_colors, rearrange, scale, merge, recode
 
-pre_process()
-extract_colors()
-rearrange()
-merge()
-recode()
-rgb_to_hex()
+# run me

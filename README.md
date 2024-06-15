@@ -16,7 +16,7 @@ This quick project aims to determine if fundus color can be separated into clini
     ![example 2](bin/img_2.png)
 
  2) extract_colors.py
-    - Extracts dominant colors from fundus images, removes alpha channel if present, and filters out black
+    - Extracts dominant colors from fundus images and filters out black
     - Returns file with RGB values (and count) per dominant color, per image
 
     ![example 3](bin/fig_3.png)
@@ -27,13 +27,19 @@ This quick project aims to determine if fundus color can be separated into clini
 
     ![example 4](bin/fig_5.png)
 
- 4) recode.py
+ 4) scale.py
+    - scales RGB values by 'count' percent
+
+ 5) recode.py
     - If including non-numerical data, this will need to be [recoded](results/post_processed/Normal/cleaned_data.csv) before analysis
     - This script will encode eye side and gender as 0 and 1
-      - OD = 0; OS = 1; Male = 0; Female = 1
+      - OD = 0
+      - OS = 1
+      - Male = 0
+      - Female = 1
  
- 5) k-means.py
-    - The data is now ready for cluster analysis. Specific dimensions can be included or excluded from analysis. For example:
+ 6) k-means.py
+    - The data is now ready for cluster analysis. Specific dimensions can be included or excluded from analysis if properly mean centered and normalized. Sample plots:
 
  ![example 5](bin/Figure_2.png)
  ![example 6](bin/Figure_1.png)

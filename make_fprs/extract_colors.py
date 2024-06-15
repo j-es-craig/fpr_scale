@@ -99,8 +99,7 @@ def process_image(file_path, output_folder, n_colors):
         logging.error(f'Error processing {file_path}: {e}')
 
 # Set the number of dominant colors to use
-n_colors = 5  # Change this value as needed
-
+n_colors = init.N_COLORS
 # Iterate over all files in the input folder
 for file_name in os.listdir(input_folder):
     file_path = os.path.join(input_folder, file_name)
