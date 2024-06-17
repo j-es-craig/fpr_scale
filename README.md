@@ -7,6 +7,7 @@ This quick project aims to determine if fundus color can be separated into clini
 ## Instructions
  1) Edit [init.py](init.py) with filepaths to image data, number of colors to extract, and estimated number of clusters
  2) Execute [main.py](main.py)
+ 3) There are two packages, [make_fprs](make_fprs) and [make_fprs_ycbcr](make_fprs_ycbcr), the latter converts to YCbCr color space for color extraction
 
 ## Explanation
  1) pre_process.py
@@ -45,8 +46,13 @@ This quick project aims to determine if fundus color can be separated into clini
  ![example 6](bin/Figure_1.png)
  ![example 7](bin/Figure_3.png)
 
+## Considerations
+- Converting to YCbCr color space might be better 
+- The more colors sampled, the closer we get to the original image? To confirm
+- With sufficient sampling, the early PCAs distinguish camera type, then pigment? 
 
-## Next Steps and Considerations
+
+## Next Steps
 - EXIF metadata will allow us to control for inconsitencies among images, and isolate pigmentation
 - Considering demographic data, eye side, age, and weight could be informative in cluster analysis. Inclusion of disease information (pathology, severity, etc.) will increase clinical relevancy (maybe?)
 - Associations between clusters and specific dimensions should be investigated (i.e., color, demographics, etc.)
