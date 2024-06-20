@@ -5,7 +5,7 @@ from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 import init
 
-input_file = init.RESULTS_OUT_DIR + 'rescaled.csv'
+input_file = init.RESULTS_OUT_DIR + 'rearranged.csv'
 
 # Load the dataset
 data = pd.read_csv(input_file)
