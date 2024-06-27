@@ -1,3 +1,3 @@
-from make_fprs_ycbcr import extract_colors, rearrange
+from make_fprs import extract_colors, rearrange
 
 # run me

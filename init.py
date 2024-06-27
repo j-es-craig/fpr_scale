@@ -4,7 +4,7 @@ import os
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 DATA_DIR = os.path.join(BASE_DIR, 'data/raw/Combined')
 DATA_OUT_DIR = os.path.join(BASE_DIR, 'data/post_processed/Combined')
-RESULTS_OUT_DIR = os.path.join(BASE_DIR, 'results/YCbCr/Combined')
+RESULTS_OUT_DIR = os.path.join(BASE_DIR, 'results/Combined')
 
 # Ensure directories exist
 os.makedirs(DATA_DIR, exist_ok=True)
